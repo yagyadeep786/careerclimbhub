@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        ::-webkit-scrollbar{
+            width: 10px;
+            background-color: rgba(0, 0, 0, 0.185);
+        }
+        ::-webkit-scrollbar-track{
+            background-color: rgba(0, 0, 0, 0.185);
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: rgba(62, 186, 235, 0.884);
+        }
+        ::-webkit-scrollbar-thumb:hover{
+            background-color: rgb(42, 184, 240);
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+      .list li{
+        transition: all;
+        transition-duration: 500ms;
+      }
+    </style>
+</head>
+<body style="scroll-behavior: smooth;">
+   <nav class="flex items-center justify-between p-4 bg-slate-800">
+      <div><h2 class="font-thin text-2xl text-gray-300">Intern Crowd</h2></div>
+      <div>
+        <ul class="flex items-center list">
+            <a href="index.html"><li class="text-sm font-semibold text-gray-300 p-2 rounded-sm mr-2 hover:cursor-pointer hover:bg-blue-300 hover:text-slate-800 hover:bg-opacity-8">Home</li></a>
+            <li class="text-sm font-semibold text-gray-300 p-2 rounded-sm mr-2 hover:cursor-pointer hover:bg-blue-300 hover:text-slate-800 hover:bg-opacity-8">About</li>
+            <li class="text-sm font-semibold text-gray-300 p-2 rounded-sm mr-2 hover:cursor-pointer hover:bg-blue-300 hover:text-slate-800 hover:bg-opacity-8">Conact</li>
+            <a href="#services"><li class="text-sm font-semibold text-gray-300 p-2 rounded-sm mr-2 hover:cursor-pointer hover:bg-blue-300 hover:text-slate-800 hover:bg-opacity-8">Services</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="md:h-screen h-auto bg-slate-800 md:flex md:flex-row flex flex-col justify-between items-center p-10">
+        <div class="h-full md:mt-20 mt-2 flex flex-col gap-3">
+            <h2 class="text-7xl uppercase font-sans font-bold text-blue-300">Intern Crowd</h2>
+            <p class="text-gray-300 w-1/2">This internship is the perfect opportunity to gain hands-on experience in your field and make valuable connections !</p>
+            <a href="#" class=" py-2 text-center rounded-full bg-blue-300 text-slate-800 border-2 hover:shadow-xl hover:scale-110 transition-all  w-28 focus:ring-2">
+                Contact Us
+            </a>
+        </div>
+        <div class="h-full flex items-center justify-center">
+            <img src="./bg.svg" alt="web" class="">
+        </div>
+    </header>
+
+    <div class="bg-slate-800 px-4 py-2 md:flex md:flex-row flex flex-col">
+        <div class="md:w-1/4 w-full">
+            <img src="intern.png" alt="" class=" mr-3 rounded-md">
+        </div>
+        <div class="p-3 px-7 ml-4 bg-white bg-opacity-80 rounded-md mt-3 md:mt-0">
+            <ul class="list-disc">
+                <li>Be specific about the benefits of the internship. What specific skills and experience will the intern gain? How will the internship help the intern's career?</li>
+                <li>Personalize the line to the specific internship. What makes this internship unique? Why is it a good fit for the candidate?</li>
+                <li>Keep the line concise and to the point. You want the reader to be able to quickly understand the benefits of the internship.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="bg-slate-800 text-center text-gray-300 underline-offset-2 underline text-3xl font-bold py-4">Our Services</h2>
+    <main class="bg-slate-800 h-auto px-5 py-5 flex justify-around gap-4 flex-wrap" id="services">
+        <div class="w-80 shadow-md shadow-blue-300 py-4 px-5 flex flex-col justify-between items-center rounded-md hover:scale-105 transition-all" style="box-shadow: 0px 0px 10px 2px rgb(34, 158, 230);">
+            <div class="w-full"><img src="web.png" alt="" class="h-fit"></div>
+            <h2 class="font-semibold text-xl text-blue-300">Web Development</h2>
+           <div class="flex flex-col items-center">
+            <p class="text-gray-300">Website needs to work across all devices and it needs to be fast as possible.</p>
+            <a href="#" class=" py-2 text-center rounded-full bg-blue-300 text-slate-800 border-2 hover:shadow-xl hover:scale-110 transition-all  w-28 focus:ring-2">
+                Apply
+            </a>
+           </div>
+        </div>
+
+        <div class="w-80 shadow-md shadow-blue-300 py-4 px-5 flex flex-col justify-between items-center rounded-md hover:scale-105 transition-all" style="box-shadow: 0px 0px 10px 2px rgb(34, 158, 230);">
+            <div class="w-full"><img src="java.png" alt="" class="h-fit"></div>
+            <h2 class="font-semibold text-xl text-blue-300">Java Development</h2>
+           <div class="flex flex-col items-center">
+            <p class="text-gray-300">It includes owning a particular application or working on several at one time.</p>
+            <a href="#" class=" py-2 text-center rounded-full bg-blue-300 text-slate-800 border-2 hover:shadow-xl hover:scale-110 transition-all  w-28 focus:ring-2">
+                Apply
+            </a>
+           </div>
+        </div>
+
+        <div class="w-80 shadow-md shadow-blue-300 py-4 px-5 flex flex-col justify-between items-center rounded-md hover:scale-105 transition-all" style="box-shadow: 0px 0px 10px 2px rgb(34, 158, 230);">
+            <div class="w-full"><img src="techny-mobile-app-development-and-web-development.png" alt="" class="h-fit"></div>
+            <h2 class="font-semibold text-xl text-blue-300">Android App Development</h2>
+           <div class="flex flex-col items-center">
+            <p class="text-gray-300 text-justify w-full">It is created for making devices running the operating systems of Android.</p>
+            <a href="#" class=" py-2 text-center rounded-full bg-blue-300 text-slate-800 border-2 hover:shadow-xl hover:scale-110 transition-all  w-28 focus:ring-2">
+                Apply
+            </a>
+           </div>
+        </div>
+
+        <div class="w-80 shadow-md shadow-blue-300 py-4 px-5 flex flex-col justify-between items-center rounded-md hover:scale-105 transition-all" style="box-shadow: 0px 0px 10px 2px rgb(34, 158, 230);">
+            <div class="w-full"><img src="digital.png" alt="" class="h-fit"></div>
+            <h2 class="font-semibold text-xl text-blue-300">Degital Marketing</h2>
+           <div class="flex flex-col items-center">
+            <p class="text-gray-300">It is the marketing and advertising of a business, product, or service using social media.</p>
+            <a href="#" class=" py-2 text-center rounded-full bg-blue-300 text-slate-800 border-2 hover:shadow-xl hover:scale-110 transition-all  w-28 focus:ring-2">
+                Apply
+            </a>
+           </div>
+        </div>
+
+        <div class="w-80 shadow-md shadow-blue-300 py-4 px-5 flex flex-col justify-between items-center rounded-md hover:scale-105 transition-all" style="box-shadow: 0px 0px 10px 2px rgb(34, 158, 230);">
+            <div class="w-full"><img src="haze-programmer-writing-code-on-laptop-1.png" alt="" class="h-fit"></div>
+            <h2 class="font-semibold text-xl text-blue-300">C/C++</h2>
+           <div class="flex flex-col items-center">
+            <p class="text-gray-300">C and C++ are both general-purpose programming languages that are used to create a wide variety of software applications</p>
+            <a href="#" class=" py-2 text-center rounded-full bg-blue-300 text-slate-800 border-2 hover:shadow-xl hover:scale-110 transition-all  w-28 focus:ring-2">
+                Apply
+            </a>
+           </div>
+        </div>
+
+        <div class="w-80 shadow-md shadow-blue-300 py-4 px-5 flex flex-col justify-between items-center rounded-md hover:scale-105 transition-all" style="box-shadow: 0px 0px 10px 2px rgb(34, 158, 230);">
+            <div class="w-full"><img src="indigo-cloud-computing-system-and-internet-of-things.png" alt="" class="h-fit"></div>
+            <h2 class="font-semibold text-xl text-blue-300">Cloud Computing</h2>
+           <div class="flex flex-col items-center gap-2">
+            <p class="text-gray-300">It is the delivery of distinct services over the Internet.These services can include anything from data storage to applications to computing power</p>
+            <a href="#" class=" py-2 text-center rounded-full bg-blue-300 text-slate-800 border-2 hover:shadow-xl hover:scale-110 transition-all  w-28 focus:ring-2">
+                Apply
+            </a>
+           </div>
+        </div>
+    </main>
+
+</body>
+</html>
