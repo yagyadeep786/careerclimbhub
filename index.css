@@ -198,8 +198,8 @@ footer{
     background-color: #202835;
     height: 100vh;
     padding: .3rem;
-    transform: translateX(10rem);
     transition: all .5s ease-in-out;
+    z-index: 5;
 }
 .menu_top{
     text-align: right;
