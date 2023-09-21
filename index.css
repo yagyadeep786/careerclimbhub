@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.logo{
+   height: 100px;
+}
+.aff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color:#1e2c3f;
+    padding-top: 2rem;
+    padding: 1rem;
+}
+.aff h3{
+    font-weight: 800;
+    font-size: x-large;
+    color: whitesmoke;
+}
+.aff p{
+    color: rgb(199, 195, 195);
+}
+.testi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.testi_card{
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px skyblue;
+    gap: 0.5rem;
+}
+.card_left .img{
+ height: 50px;
+ width: 50px;
+ border-radius: 50%;
+ border: 2px solid skyblue;
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+.card_right{
+    margin-right: 10px;
+}
+.rate i{
+    color: skyblue;
+    font-size: 1.2rem;
+}
+
+/* // footer section  */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color:#202835;
+    padding: 1rem;
+    
+}
+.footer_top{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .7rem;
+   width: 20rem;
+}
+.part h2{
+    font-weight: 600;
+    color: skyblue;
+    font-size: 1.2rem;
+}
+.part p{
+    color: rgb(214, 212, 212);
+}
+.part a{
+    color: rgb(214, 212, 212);
+}
+.part a:hover{
+    color: skyblue;
+}
+.footer_bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem; 
+    color: rgb(212, 215, 216);
+    border-top: 2px solid rgb(189, 187, 187);
+}
+.heart{
+    color: skyblue;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.menu i{
+    color: skyblue;
+    display: none;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+   .menu ul{
+    display: none;
+   }
+   .testi{
+    flex-wrap: wrap;
+    gap: 1rem;
+   }
+   .footer_top{
+    flex-wrap: wrap;
+    gap: 1rem;
+   }
+    #heading{
+    font-size: 3rem;
+   }
+   #tagline{
+    width: 100%;
+   }
+   .menu i{
+    display: block;
+   }
+
+  }
+
+
+
+/* /////////////////// registration page //////////  */
+
+.form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:#202835;
+
+}
+
+.form iframe{
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+
+/* ///////////////////////// about page //////////////// */
+
+.about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color:#202835;
+    padding: 1rem;
+}
+.about_right{
+    padding: 1rem;
+    flex: 1;
+}
+.about_right h2{
+    font-size: 2rem;
+    font-weight: 800;
+    color: skyblue;
+}
+.about_right ul li{
+    color: rgb(202, 198, 198);
+    margin-left: 10px;
+    list-style: disc;
+}
+
+
+/* /// menu card   */
+.menu_card{
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    width: 10rem;
+    background-color: #202835;
+    height: 100vh;
+    padding: .3rem;
+    transform: translateX(10rem);
+    transition: all .5s ease-in-out;
+}
+.menu_top{
+    text-align: right;
+    font-size: 2rem;
+    color: skyblue;
+    
+}
+.menu_top i{
+    background-color: rgba(255, 255, 255, 0.137);
+    border-radius: 50%;
+    padding: .4rem;
+}
+.menu_top i:hover{
+    background-color: rgba(255, 255, 255, 0.253);
+   cursor: pointer;
+}
