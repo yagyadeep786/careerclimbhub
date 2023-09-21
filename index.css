@@ -200,6 +200,7 @@ footer{
     padding: .3rem;
     transition: all .5s ease-in-out;
     z-index: 5;
+    display: none;
 }
 .menu_top{
     text-align: right;
