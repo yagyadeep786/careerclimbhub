@@ -138,6 +138,9 @@ footer{
    .menu i{
     display: block;
    }
+   .about{
+    flex-wrap: wrap;
+   }
 
   }
 
